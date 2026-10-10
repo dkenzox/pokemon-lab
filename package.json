@@ -6,7 +6,7 @@
   "scripts": {
     "start": "node server.cjs",
     "update": "node scripts/update.cjs",
-    "verify": "node scripts/verify.cjs && node scripts/verify-updater.cjs && node scripts/verify-store.cjs && node scripts/verify-usage.cjs",
+    "verify": "node scripts/verify.cjs && node scripts/verify-updater.cjs && node scripts/verify-store.cjs && node scripts/verify-usage.cjs && node scripts/verify-web-client.cjs",
     "update:engine": "node scripts/update-engine.cjs"
   },
   "devDependencies": {

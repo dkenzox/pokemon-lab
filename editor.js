@@ -3,7 +3,7 @@ let picker=null,pickerReturn=null,pickerSerial=0;
 const moveUsage=new Map();
 let popularAdvantageOnly=false;
 function usageKey(p,format=state.format){return format+':'+(p.usage?.[format]?.scope||p.id);}
-async function loadMoveUsage(p,format){const key=usageKey(p,format);if(moveUsage.has(key))return moveUsage.get(key);const result=await fetch('/api/move-usage?pokemon='+encodeURIComponent(p.id)+'&format='+format).then(r=>{if(!r.ok)throw Error('Usage unavailable');return r.json();});moveUsage.set(key,result);return result;}
+async function loadMoveUsage(p,format){const key=usageKey(p,format);if(moveUsage.has(key))return moveUsage.get(key);const result=await MatchupWeb.get('/api/move-usage?pokemon='+encodeURIComponent(p.id)+'&format='+format);moveUsage.set(key,result);return result;}
 function syncOverlayLock(){document.documentElement.classList.toggle('overlay-lock',!!picker||!!document.querySelector('dialog[open]'));}
 
 function closePicker(focus=true){if(!picker)return;const anchor=pickerReturn;picker.remove();picker=null;pickerReturn=null;syncOverlayLock();anchor?.setAttribute('aria-expanded','false');if(focus&&anchor?.isConnected)anchor.focus({preventScroll:true});}

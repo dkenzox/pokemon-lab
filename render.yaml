@@ -1,0 +1,12 @@
+services:
+  - type: web
+    name: pokemon-lab-api
+    runtime: node
+    plan: free
+    branch: main
+    buildCommand: npm ci --omit=dev
+    startCommand: node server.cjs
+    healthCheckPath: /health
+    envVars:
+      - key: MATCHUP_HOSTED
+        value: '1'

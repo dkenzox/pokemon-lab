@@ -13,3 +13,4 @@ data/move-usage.json
 /*.jpg
 /verification*.json
 /ko-verification.json
+_site/

@@ -1,0 +1,26 @@
+'use strict';
+const fs=require('node:fs'),vm=require('node:vm'),assert=require('node:assert/strict'),{randomUUID}=require('node:crypto');
+const values=new Map(),storage={getItem:k=>values.get(k)||null,setItem:(k,v)=>values.set(k,v)};
+const requests=[];
+const context={location:{hostname:'dkenzox.github.io',search:''},localStorage:storage,crypto:{randomUUID},URLSearchParams,fetch:async(url,options)=>{requests.push({url,options});return {ok:true,json:async()=>({ok:true})}}};
+vm.runInNewContext(fs.readFileSync(require('node:path').join(__dirname,'../web-client.js'),'utf8')+'\nglobalThis.client=MatchupWeb;',context);
+const client=context.client;
+(async()=>{
+  assert.equal(client.hosted,true);
+  assert.equal((await client.get('/api/workspace')).scenarios.length,0);
+  let record=await client.post('/api/scenarios/create',{name:'Test',state:{selected:{pokemon:'garchomp'}}});
+  assert.equal(record.revision,1);
+  record=await client.post('/api/scenarios/save',{id:record.id,revision:1,state:{selected:{pokemon:'torkoal'}}});
+  assert.equal(record.revision,2);
+  await assert.rejects(()=>client.post('/api/scenarios/save',{id:record.id,revision:1,state:{}}),/another tab/);
+  assert.equal((await client.get('/api/workspace')).scenarios[0].state.selected.pokemon,'torkoal');
+  await client.post('/api/scenarios/remove',{id:record.id});
+  assert.equal((await client.get('/api/workspace')).scenarios.length,0);
+  await client.post('/api/scenarios/restore',{id:record.id});
+  assert.equal((await client.get('/api/workspace')).scenarios[0].id,record.id);
+  await client.post('/api/sets/save',{set:{pokemon:'garchomp'},name:'Set'});
+  assert.equal((await client.get('/api/workspace')).sets.length,1);
+  await client.post('/api/calculate',{format:'Doubles'});
+  assert.equal(requests[0].url,'https://pokemon-lab-api.onrender.com/api/calculate');
+  console.log('Browser storage and API routing: passed');
+})().catch(e=>{console.error(e);process.exitCode=1});

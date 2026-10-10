@@ -76,3 +76,11 @@ The redesigned editor, searchable selectors, move filters, MAX budget enforcemen
 Pokémon Showdown is MIT; license retained in `vendor/showdown/LICENSE`. `@smogon/calc` is MIT and used only for independent verification. Runtime dependencies are pinned in package-lock.json. No AGPL calculator code was reused.
 
 Item and damage-category sprites are from [Pokémon Showdown’s sprite service](https://play.pokemonshowdown.com/sprites/); item sprite indices were extracted as metadata from its [item data](https://play.pokemonshowdown.com/data/items.js). Type symbols are from [duiker101/pokemon-type-svg-icons](https://github.com/duiker101/pokemon-type-svg-icons), whose author permits their use. Sprites retain third-party Pokémon artwork rights; the simulator’s MIT license does not grant artwork rights. No Pokémon Showdown client code was reused.
+
+## Public deployment
+
+The GitHub Pages build is in `.github/workflows/pages.yml`. Every push to `main` rebuilds the static page with `node scripts/build-pages.cjs`. For local changes: edit files here, run `npm run verify`, commit, and push `main`. The Pages URL is `https://dkenzox.github.io/pokemon-lab/`.
+
+The calculation service runs on Render Free from `render.yaml` and should be linked to the same GitHub repository with automatic deploys enabled. It is API only (`MATCHUP_HOSTED=1`); scenarios and personal sets remain in browser storage on GitHub Pages. There is no account sync: export personal sets for backup, and use the same browser to access saved scenarios. The API URL is `https://pokemon-lab-api.onrender.com` by default. If Render assigns a different URL, set the `apiBase` default in `web-client.js` and push `main`.
+
+Render Free may take time to wake after inactivity, and the server's sprite and usage caches are temporary. The authoritative catalogue is committed in `data/catalogue.json`; refresh it locally with `npm run update`, review the changed data, then commit and push. The in-page refresh button is unavailable on Pages because static assets cannot be changed from the browser.
