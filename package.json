@@ -1,0 +1,22 @@
+{
+  "name": "matchup-lab-local",
+  "private": true,
+  "version": "1.0.0",
+  "description": "Personal local Pokémon Champions comparator",
+  "scripts": {
+    "start": "node server.cjs",
+    "update": "node scripts/update.cjs",
+    "verify": "node scripts/verify.cjs && node scripts/verify-updater.cjs && node scripts/verify-store.cjs && node scripts/verify-usage.cjs",
+    "update:engine": "node scripts/update-engine.cjs"
+  },
+  "devDependencies": {
+    "@smogon/calc": "0.12.0"
+  },
+  "dependencies": {
+    "esbuild": "0.25.12",
+    "ts-chacha20": "1.2.0"
+  },
+  "engines": {
+    "node": ">=22.13.0"
+  }
+}

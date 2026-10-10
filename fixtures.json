@@ -1,0 +1,1174 @@
+{
+  "metadata": {
+    "label": "Prototype sample data",
+    "pokemonCount": 20,
+    "level": 50,
+    "spRange": [
+      0,
+      32
+    ],
+    "statModel": "Sample level-50 model: fixed 31 IVs; 1 SP adds 1 pre-nature stat point. No total SP budget enforced. Not validated against game rules.",
+    "natureContext": "Mega Staraptor percentages are illustrative nature fixtures from the supplied screenshot, not verified live rates or joint full-set frequency."
+  },
+  "pokemon": [
+    {
+      "id": "metagross",
+      "name": "Metagross",
+      "family": "metagross",
+      "types": [
+        "Steel",
+        "Psychic"
+      ],
+      "base": {
+        "hp": 80,
+        "atk": 135,
+        "def": 130,
+        "spa": 95,
+        "spd": 90,
+        "spe": 70
+      },
+      "abilities": [
+        "Clear Body",
+        "None"
+      ],
+      "megaStone": null,
+      "sets": [
+        {
+          "label": "Bulky attacker",
+          "nature": "Adamant",
+          "item": "Assault Vest",
+          "sp": {
+            "hp": 24,
+            "atk": 32,
+            "def": 8,
+            "spa": 0,
+            "spd": 0,
+            "spe": 0
+          },
+          "move": "Iron Head"
+        },
+        {
+          "label": "Fast attacker",
+          "nature": "Jolly",
+          "item": "Life Orb",
+          "sp": {
+            "hp": 0,
+            "atk": 32,
+            "def": 0,
+            "spa": 0,
+            "spd": 0,
+            "spe": 32
+          },
+          "move": "Iron Head"
+        }
+      ],
+      "art": "assets/metagross.svg"
+    },
+    {
+      "id": "mega-metagross",
+      "name": "Mega Metagross",
+      "family": "metagross",
+      "types": [
+        "Steel",
+        "Psychic"
+      ],
+      "base": {
+        "hp": 80,
+        "atk": 145,
+        "def": 150,
+        "spa": 105,
+        "spd": 110,
+        "spe": 110
+      },
+      "abilities": [
+        "Tough Claws",
+        "None"
+      ],
+      "megaStone": "Metagrossite",
+      "sets": [
+        {
+          "label": "Balanced attacker",
+          "nature": "Adamant",
+          "item": "Metagrossite",
+          "sp": {
+            "hp": 16,
+            "atk": 20,
+            "def": 8,
+            "spa": 0,
+            "spd": 2,
+            "spe": 20
+          },
+          "move": "Iron Head"
+        },
+        {
+          "label": "Fast attacker",
+          "nature": "Jolly",
+          "item": "Metagrossite",
+          "sp": {
+            "hp": 0,
+            "atk": 32,
+            "def": 0,
+            "spa": 0,
+            "spd": 0,
+            "spe": 32
+          },
+          "move": "Iron Head"
+        }
+      ],
+      "art": "assets/mega-metagross.svg"
+    },
+    {
+      "id": "torkoal",
+      "name": "Torkoal",
+      "family": "torkoal",
+      "types": [
+        "Fire"
+      ],
+      "base": {
+        "hp": 70,
+        "atk": 85,
+        "def": 140,
+        "spa": 85,
+        "spd": 70,
+        "spe": 20
+      },
+      "abilities": [
+        "Drought",
+        "None"
+      ],
+      "megaStone": null,
+      "sets": [
+        {
+          "label": "Trick Room eruption",
+          "nature": "Quiet",
+          "item": "Charcoal",
+          "sp": {
+            "hp": 32,
+            "atk": 0,
+            "def": 0,
+            "spa": 32,
+            "spd": 4,
+            "spe": 0
+          },
+          "move": "Eruption"
+        },
+        {
+          "label": "Bulky sun",
+          "nature": "Bold",
+          "item": "Sitrus Berry",
+          "sp": {
+            "hp": 32,
+            "atk": 0,
+            "def": 24,
+            "spa": 8,
+            "spd": 0,
+            "spe": 0
+          },
+          "move": "Flamethrower"
+        }
+      ],
+      "art": "assets/torkoal.svg"
+    },
+    {
+      "id": "garchomp",
+      "name": "Garchomp",
+      "family": "garchomp",
+      "types": [
+        "Dragon",
+        "Ground"
+      ],
+      "base": {
+        "hp": 108,
+        "atk": 130,
+        "def": 95,
+        "spa": 80,
+        "spd": 85,
+        "spe": 102
+      },
+      "abilities": [
+        "Rough Skin",
+        "None"
+      ],
+      "megaStone": null,
+      "sets": [
+        {
+          "label": "Life Orb attacker",
+          "nature": "Jolly",
+          "item": "Life Orb",
+          "sp": {
+            "hp": 0,
+            "atk": 32,
+            "def": 0,
+            "spa": 0,
+            "spd": 0,
+            "spe": 32
+          },
+          "move": "Stomping Tantrum"
+        },
+        {
+          "label": "Sitrus attacker",
+          "nature": "Jolly",
+          "item": "Sitrus Berry",
+          "sp": {
+            "hp": 20,
+            "atk": 32,
+            "def": 0,
+            "spa": 0,
+            "spd": 0,
+            "spe": 12
+          },
+          "move": "Stomping Tantrum"
+        }
+      ],
+      "art": "assets/garchomp.svg"
+    },
+    {
+      "id": "mega-garchomp",
+      "name": "Mega Garchomp",
+      "family": "garchomp",
+      "types": [
+        "Dragon",
+        "Ground"
+      ],
+      "base": {
+        "hp": 108,
+        "atk": 170,
+        "def": 115,
+        "spa": 120,
+        "spd": 95,
+        "spe": 92
+      },
+      "abilities": [
+        "Sand Force",
+        "None"
+      ],
+      "megaStone": "Garchompite",
+      "sets": [
+        {
+          "label": "Sand attacker",
+          "nature": "Adamant",
+          "item": "Garchompite",
+          "sp": {
+            "hp": 20,
+            "atk": 32,
+            "def": 0,
+            "spa": 0,
+            "spd": 0,
+            "spe": 12
+          },
+          "move": "Earthquake"
+        },
+        {
+          "label": "Mixed attacker",
+          "nature": "Naive",
+          "item": "Garchompite",
+          "sp": {
+            "hp": 0,
+            "atk": 24,
+            "def": 0,
+            "spa": 16,
+            "spd": 0,
+            "spe": 32
+          },
+          "move": "Draco Meteor"
+        }
+      ],
+      "art": "assets/mega-garchomp.svg"
+    },
+    {
+      "id": "mega-garchomp-z",
+      "name": "Mega Garchomp Z",
+      "family": "garchomp",
+      "types": [
+        "Dragon",
+        "Ground"
+      ],
+      "base": {
+        "hp": 108,
+        "atk": 150,
+        "def": 115,
+        "spa": 110,
+        "spd": 95,
+        "spe": 112
+      },
+      "abilities": [
+        "Rough Skin",
+        "None"
+      ],
+      "megaStone": "Garchompite Z",
+      "sets": [
+        {
+          "label": "Z form fast attacker",
+          "nature": "Jolly",
+          "item": "Garchompite Z",
+          "sp": {
+            "hp": 0,
+            "atk": 32,
+            "def": 0,
+            "spa": 0,
+            "spd": 0,
+            "spe": 32
+          },
+          "move": "Earthquake"
+        },
+        {
+          "label": "Z form bulky attacker",
+          "nature": "Adamant",
+          "item": "Garchompite Z",
+          "sp": {
+            "hp": 24,
+            "atk": 32,
+            "def": 0,
+            "spa": 0,
+            "spd": 0,
+            "spe": 8
+          },
+          "move": "Dragon Claw"
+        }
+      ],
+      "art": "assets/mega-garchomp-z.svg",
+      "note": "Hypothetical form; sample base stats and ability."
+    },
+    {
+      "id": "staraptor",
+      "name": "Staraptor",
+      "family": "staraptor",
+      "types": [
+        "Normal",
+        "Flying"
+      ],
+      "base": {
+        "hp": 85,
+        "atk": 120,
+        "def": 70,
+        "spa": 50,
+        "spd": 60,
+        "spe": 100
+      },
+      "abilities": [
+        "Intimidate",
+        "None"
+      ],
+      "megaStone": null,
+      "sets": [
+        {
+          "label": "Fast scarf",
+          "nature": "Jolly",
+          "item": "Choice Scarf",
+          "sp": {
+            "hp": 0,
+            "atk": 32,
+            "def": 0,
+            "spa": 0,
+            "spd": 0,
+            "spe": 32
+          },
+          "move": "Brave Bird"
+        },
+        {
+          "label": "Strong band",
+          "nature": "Adamant",
+          "item": "Choice Band",
+          "sp": {
+            "hp": 0,
+            "atk": 32,
+            "def": 0,
+            "spa": 0,
+            "spd": 0,
+            "spe": 32
+          },
+          "move": "Brave Bird"
+        }
+      ],
+      "art": "assets/staraptor.svg"
+    },
+    {
+      "id": "mega-staraptor",
+      "name": "Mega Staraptor",
+      "family": "staraptor",
+      "types": [
+        "Normal",
+        "Flying"
+      ],
+      "base": {
+        "hp": 85,
+        "atk": 140,
+        "def": 90,
+        "spa": 60,
+        "spd": 80,
+        "spe": 110
+      },
+      "abilities": [
+        "Reckless",
+        "None"
+      ],
+      "megaStone": "Staraptite",
+      "sets": [
+        {
+          "label": "Jolly \u00b7 32 Speed SP",
+          "nature": "Jolly",
+          "item": "Staraptite",
+          "sp": {
+            "hp": 0,
+            "atk": 32,
+            "def": 0,
+            "spa": 0,
+            "spd": 0,
+            "spe": 32
+          },
+          "move": "Brave Bird",
+          "natureContext": "87.3% Jolly nature fixture"
+        },
+        {
+          "label": "Adamant \u00b7 32 Speed SP",
+          "nature": "Adamant",
+          "item": "Staraptite",
+          "sp": {
+            "hp": 0,
+            "atk": 32,
+            "def": 0,
+            "spa": 0,
+            "spd": 0,
+            "spe": 32
+          },
+          "move": "Brave Bird",
+          "natureContext": "11.8% Adamant nature fixture"
+        }
+      ],
+      "art": "assets/mega-staraptor.svg",
+      "note": "Hypothetical form; sample base stats and ability."
+    },
+    {
+      "id": "incineroar",
+      "name": "Incineroar",
+      "family": "incineroar",
+      "types": [
+        "Fire",
+        "Dark"
+      ],
+      "base": {
+        "hp": 95,
+        "atk": 115,
+        "def": 90,
+        "spa": 80,
+        "spd": 90,
+        "spe": 60
+      },
+      "abilities": [
+        "Intimidate",
+        "None"
+      ],
+      "megaStone": null,
+      "sets": [
+        {
+          "label": "Bulky support",
+          "nature": "Careful",
+          "item": "Sitrus Berry",
+          "sp": {
+            "hp": 32,
+            "atk": 0,
+            "def": 12,
+            "spa": 0,
+            "spd": 24,
+            "spe": 0
+          },
+          "move": "Flare Blitz"
+        },
+        {
+          "label": "Physical attacker",
+          "nature": "Adamant",
+          "item": "Sitrus Berry",
+          "sp": {
+            "hp": 24,
+            "atk": 32,
+            "def": 8,
+            "spa": 0,
+            "spd": 0,
+            "spe": 0
+          },
+          "move": "Flare Blitz"
+        }
+      ],
+      "art": "assets/incineroar.svg"
+    },
+    {
+      "id": "kingambit",
+      "name": "Kingambit",
+      "family": "kingambit",
+      "types": [
+        "Dark",
+        "Steel"
+      ],
+      "base": {
+        "hp": 100,
+        "atk": 135,
+        "def": 120,
+        "spa": 60,
+        "spd": 85,
+        "spe": 50
+      },
+      "abilities": [
+        "Defiant",
+        "None"
+      ],
+      "megaStone": null,
+      "sets": [
+        {
+          "label": "Life Orb attacker",
+          "nature": "Adamant",
+          "item": "Life Orb",
+          "sp": {
+            "hp": 32,
+            "atk": 32,
+            "def": 0,
+            "spa": 0,
+            "spd": 0,
+            "spe": 0
+          },
+          "move": "Kowtow Cleave"
+        },
+        {
+          "label": "Bulky vest",
+          "nature": "Brave",
+          "item": "Assault Vest",
+          "sp": {
+            "hp": 32,
+            "atk": 24,
+            "def": 0,
+            "spa": 0,
+            "spd": 12,
+            "spe": 0
+          },
+          "move": "Iron Head"
+        }
+      ],
+      "art": "assets/kingambit.svg"
+    },
+    {
+      "id": "dragapult",
+      "name": "Dragapult",
+      "family": "dragapult",
+      "types": [
+        "Dragon",
+        "Ghost"
+      ],
+      "base": {
+        "hp": 88,
+        "atk": 120,
+        "def": 75,
+        "spa": 100,
+        "spd": 75,
+        "spe": 142
+      },
+      "abilities": [
+        "Clear Body",
+        "None"
+      ],
+      "megaStone": null,
+      "sets": [
+        {
+          "label": "Fast physical",
+          "nature": "Jolly",
+          "item": "Life Orb",
+          "sp": {
+            "hp": 0,
+            "atk": 32,
+            "def": 0,
+            "spa": 0,
+            "spd": 0,
+            "spe": 32
+          },
+          "move": "Dragon Darts"
+        },
+        {
+          "label": "Special attacker",
+          "nature": "Timid",
+          "item": "Choice Specs",
+          "sp": {
+            "hp": 0,
+            "atk": 0,
+            "def": 0,
+            "spa": 32,
+            "spd": 0,
+            "spe": 32
+          },
+          "move": "Shadow Ball"
+        }
+      ],
+      "art": "assets/dragapult.svg"
+    },
+    {
+      "id": "dragonite",
+      "name": "Dragonite",
+      "family": "dragonite",
+      "types": [
+        "Dragon",
+        "Flying"
+      ],
+      "base": {
+        "hp": 91,
+        "atk": 134,
+        "def": 95,
+        "spa": 100,
+        "spd": 100,
+        "spe": 80
+      },
+      "abilities": [
+        "Multiscale",
+        "None"
+      ],
+      "megaStone": null,
+      "sets": [
+        {
+          "label": "Band attacker",
+          "nature": "Adamant",
+          "item": "Choice Band",
+          "sp": {
+            "hp": 24,
+            "atk": 32,
+            "def": 0,
+            "spa": 0,
+            "spd": 0,
+            "spe": 8
+          },
+          "move": "Dragon Claw"
+        },
+        {
+          "label": "Fast dancer",
+          "nature": "Jolly",
+          "item": "Lum Berry",
+          "sp": {
+            "hp": 0,
+            "atk": 32,
+            "def": 0,
+            "spa": 0,
+            "spd": 0,
+            "spe": 32
+          },
+          "move": "Dragon Claw"
+        }
+      ],
+      "art": "assets/dragonite.svg"
+    },
+    {
+      "id": "gholdengo",
+      "name": "Gholdengo",
+      "family": "gholdengo",
+      "types": [
+        "Steel",
+        "Ghost"
+      ],
+      "base": {
+        "hp": 87,
+        "atk": 60,
+        "def": 95,
+        "spa": 133,
+        "spd": 91,
+        "spe": 84
+      },
+      "abilities": [
+        "Good as Gold",
+        "None"
+      ],
+      "megaStone": null,
+      "sets": [
+        {
+          "label": "Fast special",
+          "nature": "Timid",
+          "item": "Life Orb",
+          "sp": {
+            "hp": 0,
+            "atk": 0,
+            "def": 0,
+            "spa": 32,
+            "spd": 0,
+            "spe": 32
+          },
+          "move": "Make It Rain"
+        },
+        {
+          "label": "Bulky special",
+          "nature": "Modest",
+          "item": "Leftovers",
+          "sp": {
+            "hp": 24,
+            "atk": 0,
+            "def": 8,
+            "spa": 32,
+            "spd": 0,
+            "spe": 0
+          },
+          "move": "Shadow Ball"
+        }
+      ],
+      "art": "assets/gholdengo.svg"
+    },
+    {
+      "id": "rillaboom",
+      "name": "Rillaboom",
+      "family": "rillaboom",
+      "types": [
+        "Grass"
+      ],
+      "base": {
+        "hp": 100,
+        "atk": 125,
+        "def": 90,
+        "spa": 60,
+        "spd": 70,
+        "spe": 85
+      },
+      "abilities": [
+        "Grassy Surge",
+        "None"
+      ],
+      "megaStone": null,
+      "sets": [
+        {
+          "label": "Bulky vest",
+          "nature": "Adamant",
+          "item": "Assault Vest",
+          "sp": {
+            "hp": 32,
+            "atk": 32,
+            "def": 0,
+            "spa": 0,
+            "spd": 4,
+            "spe": 0
+          },
+          "move": "Wood Hammer"
+        },
+        {
+          "label": "Fast band",
+          "nature": "Jolly",
+          "item": "Choice Band",
+          "sp": {
+            "hp": 0,
+            "atk": 32,
+            "def": 0,
+            "spa": 0,
+            "spd": 0,
+            "spe": 32
+          },
+          "move": "Wood Hammer"
+        }
+      ],
+      "art": "assets/rillaboom.svg"
+    },
+    {
+      "id": "urshifu-rapid",
+      "name": "Urshifu \u00b7 Rapid Strike",
+      "family": "urshifu",
+      "types": [
+        "Fighting",
+        "Water"
+      ],
+      "base": {
+        "hp": 100,
+        "atk": 130,
+        "def": 100,
+        "spa": 63,
+        "spd": 60,
+        "spe": 97
+      },
+      "abilities": [
+        "Unseen Fist",
+        "None"
+      ],
+      "megaStone": null,
+      "sets": [
+        {
+          "label": "Fast water",
+          "nature": "Jolly",
+          "item": "Mystic Water",
+          "sp": {
+            "hp": 0,
+            "atk": 32,
+            "def": 0,
+            "spa": 0,
+            "spd": 0,
+            "spe": 32
+          },
+          "move": "Surging Strikes"
+        },
+        {
+          "label": "Scarf attacker",
+          "nature": "Adamant",
+          "item": "Choice Scarf",
+          "sp": {
+            "hp": 0,
+            "atk": 32,
+            "def": 0,
+            "spa": 0,
+            "spd": 0,
+            "spe": 32
+          },
+          "move": "Surging Strikes"
+        }
+      ],
+      "art": "assets/urshifu-rapid.svg"
+    },
+    {
+      "id": "flutter-mane",
+      "name": "Flutter Mane",
+      "family": "flutter-mane",
+      "types": [
+        "Ghost",
+        "Fairy"
+      ],
+      "base": {
+        "hp": 55,
+        "atk": 55,
+        "def": 55,
+        "spa": 135,
+        "spd": 135,
+        "spe": 135
+      },
+      "abilities": [
+        "Protosynthesis",
+        "None"
+      ],
+      "megaStone": null,
+      "sets": [
+        {
+          "label": "Fast special",
+          "nature": "Timid",
+          "item": "Booster Energy",
+          "sp": {
+            "hp": 0,
+            "atk": 0,
+            "def": 0,
+            "spa": 32,
+            "spd": 0,
+            "spe": 32
+          },
+          "move": "Moonblast"
+        },
+        {
+          "label": "Bulky special",
+          "nature": "Modest",
+          "item": "Choice Specs",
+          "sp": {
+            "hp": 24,
+            "atk": 0,
+            "def": 8,
+            "spa": 32,
+            "spd": 0,
+            "spe": 0
+          },
+          "move": "Shadow Ball"
+        }
+      ],
+      "art": "assets/flutter-mane.svg"
+    },
+    {
+      "id": "farigiraf",
+      "name": "Farigiraf",
+      "family": "farigiraf",
+      "types": [
+        "Normal",
+        "Psychic"
+      ],
+      "base": {
+        "hp": 120,
+        "atk": 90,
+        "def": 70,
+        "spa": 110,
+        "spd": 70,
+        "spe": 60
+      },
+      "abilities": [
+        "Armor Tail",
+        "None"
+      ],
+      "megaStone": null,
+      "sets": [
+        {
+          "label": "Trick Room support",
+          "nature": "Quiet",
+          "item": "Sitrus Berry",
+          "sp": {
+            "hp": 32,
+            "atk": 0,
+            "def": 8,
+            "spa": 24,
+            "spd": 8,
+            "spe": 0
+          },
+          "move": "Psychic"
+        },
+        {
+          "label": "Bulky support",
+          "nature": "Bold",
+          "item": "Safety Goggles",
+          "sp": {
+            "hp": 32,
+            "atk": 0,
+            "def": 24,
+            "spa": 8,
+            "spd": 8,
+            "spe": 0
+          },
+          "move": "Psychic"
+        }
+      ],
+      "art": "assets/farigiraf.svg"
+    },
+    {
+      "id": "amoonguss",
+      "name": "Amoonguss",
+      "family": "amoonguss",
+      "types": [
+        "Grass",
+        "Poison"
+      ],
+      "base": {
+        "hp": 114,
+        "atk": 85,
+        "def": 70,
+        "spa": 85,
+        "spd": 80,
+        "spe": 30
+      },
+      "abilities": [
+        "Regenerator",
+        "None"
+      ],
+      "megaStone": null,
+      "sets": [
+        {
+          "label": "Trick Room support",
+          "nature": "Sassy",
+          "item": "Rocky Helmet",
+          "sp": {
+            "hp": 32,
+            "atk": 0,
+            "def": 16,
+            "spa": 0,
+            "spd": 16,
+            "spe": 0
+          },
+          "move": "Sludge Bomb"
+        },
+        {
+          "label": "Physical wall",
+          "nature": "Bold",
+          "item": "Sitrus Berry",
+          "sp": {
+            "hp": 32,
+            "atk": 0,
+            "def": 32,
+            "spa": 0,
+            "spd": 4,
+            "spe": 0
+          },
+          "move": "Sludge Bomb"
+        }
+      ],
+      "art": "assets/amoonguss.svg"
+    },
+    {
+      "id": "tyranitar",
+      "name": "Tyranitar",
+      "family": "tyranitar",
+      "types": [
+        "Rock",
+        "Dark"
+      ],
+      "base": {
+        "hp": 100,
+        "atk": 134,
+        "def": 110,
+        "spa": 95,
+        "spd": 100,
+        "spe": 61
+      },
+      "abilities": [
+        "Sand Stream",
+        "None"
+      ],
+      "megaStone": null,
+      "sets": [
+        {
+          "label": "Band attacker",
+          "nature": "Adamant",
+          "item": "Choice Band",
+          "sp": {
+            "hp": 32,
+            "atk": 32,
+            "def": 0,
+            "spa": 0,
+            "spd": 0,
+            "spe": 0
+          },
+          "move": "Rock Slide"
+        },
+        {
+          "label": "Fast scarf",
+          "nature": "Jolly",
+          "item": "Choice Scarf",
+          "sp": {
+            "hp": 0,
+            "atk": 32,
+            "def": 0,
+            "spa": 0,
+            "spd": 0,
+            "spe": 32
+          },
+          "move": "Rock Slide"
+        }
+      ],
+      "art": "assets/tyranitar.svg"
+    },
+    {
+      "id": "charizard",
+      "name": "Charizard",
+      "family": "charizard",
+      "types": [
+        "Fire",
+        "Flying"
+      ],
+      "base": {
+        "hp": 78,
+        "atk": 84,
+        "def": 78,
+        "spa": 109,
+        "spd": 85,
+        "spe": 100
+      },
+      "abilities": [
+        "Blaze",
+        "None"
+      ],
+      "megaStone": null,
+      "sets": [
+        {
+          "label": "Special sun",
+          "nature": "Timid",
+          "item": "Life Orb",
+          "sp": {
+            "hp": 0,
+            "atk": 0,
+            "def": 0,
+            "spa": 32,
+            "spd": 0,
+            "spe": 32
+          },
+          "move": "Flamethrower"
+        },
+        {
+          "label": "Special power",
+          "nature": "Modest",
+          "item": "Choice Specs",
+          "sp": {
+            "hp": 0,
+            "atk": 0,
+            "def": 0,
+            "spa": 32,
+            "spd": 0,
+            "spe": 32
+          },
+          "move": "Flamethrower"
+        }
+      ],
+      "art": "assets/charizard.svg"
+    }
+  ],
+  "moves": {
+    "Iron Head": {
+      "type": "Steel",
+      "power": 80,
+      "category": "Physical"
+    },
+    "Eruption": {
+      "type": "Fire",
+      "power": 150,
+      "category": "Special"
+    },
+    "Flamethrower": {
+      "type": "Fire",
+      "power": 90,
+      "category": "Special"
+    },
+    "Stomping Tantrum": {
+      "type": "Ground",
+      "power": 75,
+      "category": "Physical"
+    },
+    "Earthquake": {
+      "type": "Ground",
+      "power": 100,
+      "category": "Physical"
+    },
+    "Draco Meteor": {
+      "type": "Dragon",
+      "power": 130,
+      "category": "Special"
+    },
+    "Dragon Claw": {
+      "type": "Dragon",
+      "power": 80,
+      "category": "Physical"
+    },
+    "Brave Bird": {
+      "type": "Flying",
+      "power": 120,
+      "category": "Physical"
+    },
+    "Flare Blitz": {
+      "type": "Fire",
+      "power": 120,
+      "category": "Physical"
+    },
+    "Kowtow Cleave": {
+      "type": "Dark",
+      "power": 85,
+      "category": "Physical"
+    },
+    "Dragon Darts": {
+      "type": "Dragon",
+      "power": 100,
+      "category": "Physical"
+    },
+    "Shadow Ball": {
+      "type": "Ghost",
+      "power": 80,
+      "category": "Special"
+    },
+    "Make It Rain": {
+      "type": "Steel",
+      "power": 120,
+      "category": "Special"
+    },
+    "Wood Hammer": {
+      "type": "Grass",
+      "power": 120,
+      "category": "Physical"
+    },
+    "Surging Strikes": {
+      "type": "Water",
+      "power": 75,
+      "category": "Physical"
+    },
+    "Moonblast": {
+      "type": "Fairy",
+      "power": 95,
+      "category": "Special"
+    },
+    "Psychic": {
+      "type": "Psychic",
+      "power": 90,
+      "category": "Special"
+    },
+    "Sludge Bomb": {
+      "type": "Poison",
+      "power": 90,
+      "category": "Special"
+    },
+    "Rock Slide": {
+      "type": "Rock",
+      "power": 75,
+      "category": "Physical"
+    }
+  }
+}

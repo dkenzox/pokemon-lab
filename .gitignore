@@ -1,0 +1,15 @@
+node_modules/
+.DS_Store
+
+# Personal workspaces and runtime caches
+data/*.sqlite
+data/*.sqlite-*
+data/sprites/
+data/update-report.json
+data/move-usage.json
+
+# Local verification artifacts, not app assets
+/*.png
+/*.jpg
+/verification*.json
+/ko-verification.json
