@@ -79,7 +79,7 @@ Item and damage-category sprites are from [Pokémon Showdown’s sprite service]
 
 ## Public deployment
 
-The GitHub Pages build is in `.github/workflows/pages.yml`. Every push to `main` rebuilds the static page with `node scripts/build-pages.cjs`. For local changes: edit files here, run `npm run verify`, commit, and push `main`. The Pages URL is `https://dkenzox.github.io/pokemon-lab/`.
+The GitHub Pages build is in `.github/workflows/pages.yml`. Every push to `main` rebuilds the static page with `node scripts/build-pages.cjs`. For local changes, edit files here and run `npm run publish -- "Describe the change"`. This verifies, commits, and pushes to `main` in one step; ignored personal SQLite data and runtime caches stay local. The Pages URL is `https://dkenzox.github.io/pokemon-lab/`.
 
 The calculation service runs on Render Free using the public repository. Add its secret deploy hook URL to GitHub Actions as `RENDER_DEPLOY_HOOK_URL`; `.github/workflows/backend.yml` then updates the service on every push to `main`. `render.yaml` documents the service settings for recreation. It is API only (`MATCHUP_HOSTED=1`); scenarios and personal sets remain in browser storage on GitHub Pages. There is no account sync: export personal sets for backup, and use the same browser to access saved scenarios. The API URL is `https://pokemon-lab-api.onrender.com` by default. If Render assigns a different URL, set the `apiBase` default in `web-client.js` and push `main`.
 

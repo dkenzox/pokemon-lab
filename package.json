@@ -7,7 +7,8 @@
     "start": "node server.cjs",
     "update": "node scripts/update.cjs",
     "verify": "node scripts/verify.cjs && node scripts/verify-updater.cjs && node scripts/verify-store.cjs && node scripts/verify-usage.cjs && node scripts/verify-web-client.cjs",
-    "update:engine": "node scripts/update-engine.cjs"
+    "update:engine": "node scripts/update-engine.cjs",
+    "publish": "node scripts/publish.cjs"
   },
   "devDependencies": {
     "@smogon/calc": "0.12.0"
