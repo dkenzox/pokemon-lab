@@ -1,0 +1,17 @@
+name: Deploy calculation service
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    env:
+      RENDER_DEPLOY_HOOK_URL: ${{ secrets.RENDER_DEPLOY_HOOK_URL }}
+    steps:
+      - name: Trigger Render deployment
+        if: env.RENDER_DEPLOY_HOOK_URL != ''
+        run: curl --fail-with-body --silent --show-error --request POST --output /dev/null "$RENDER_DEPLOY_HOOK_URL"
+      - name: Explain missing deploy hook
+        if: env.RENDER_DEPLOY_HOOK_URL == ''
+        run: echo 'Add RENDER_DEPLOY_HOOK_URL as a repository Actions secret to update the calculation service on each push.'

@@ -4,6 +4,7 @@ services:
     runtime: node
     plan: free
     branch: main
+    autoDeployTrigger: 'off'
     buildCommand: npm ci --omit=dev
     startCommand: node server.cjs
     healthCheckPath: /health

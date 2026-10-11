@@ -14,3 +14,4 @@ data/move-usage.json
 /verification*.json
 /ko-verification.json
 _site/
+.playwright-cli/

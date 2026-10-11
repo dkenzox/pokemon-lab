@@ -1,8 +1,10 @@
 'use strict';
 // GitHub Pages keeps personal data in this browser; only calculations use the API.
 const MatchupWeb = (() => {
-  const hosted = location.hostname.endsWith('.github.io') || new URLSearchParams(location.search).has('pages-test');
-  const apiBase = hosted ? (localStorage.getItem('matchup-lab-api-url') || 'https://pokemon-lab-api.onrender.com') : '';
+  const params=new URLSearchParams(location.search);
+  const localTest=['localhost','127.0.0.1'].includes(location.hostname)&&params.has('pages-test');
+  const hosted = location.hostname.endsWith('.github.io') || localTest;
+  const apiBase = hosted ? (localTest&&params.get('api') || 'https://pokemon-lab-api.onrender.com') : '';
   const key = 'matchup-lab-pages-v1';
   const read = () => {
     try { return JSON.parse(localStorage.getItem(key)) || {scenarios:[],sets:[],activeId:null,deleted:{}}; }
