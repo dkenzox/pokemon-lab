@@ -13,9 +13,14 @@ if(run('git',['branch','--show-current'],{capture:true})!=='main'){
 run('npm',['run','verify']);
 run('git',['add','-A']);
 const staged=run('git',['diff','--cached','--name-only'],{capture:true}).split('\n').filter(Boolean);
-if(!staged.length){console.log('No changes to publish.');process.exit(0);}
+if(!staged.length){
+  const ahead=Number(run('git',['rev-list','--count','@{upstream}..HEAD'],{capture:true}));
+  if(ahead){run('git',['push','origin','main']);console.log('Pushed the pending commit.');}
+  else console.log('No changes to publish.');
+  process.exit(0);
+}
 const sensitive=staged.filter(file=>/(^|\/)(\.env(?:\.|$)|\.npmrc$|[^/]+\.(?:sqlite|db|pem|key)$)/i.test(file));
-if(sensitive.length){console.error('Sensitive files were staged; review them before publishing:',sensitive.join(', '));process.exit(2);}
+if(sensitive.length){run('git',['restore','--staged','--',...sensitive]);console.error('Sensitive files were excluded; review them before publishing:',sensitive.join(', '));process.exit(2);}
 run('git',['diff','--cached','--check']);
 run('git',['-c','commit.gpgsign=false','commit','-m',message]);
 run('git',['push','origin','main']);
